@@ -1,0 +1,17 @@
+version: v2
+
+deps:
+  - buf.build/bufbuild/protovalidate
+  - buf.build/googleapis/googleapis
+
+modules:
+  - path: proto
+    name: buf.build/quickshard/plugin-spec
+
+lint:
+  use:
+    - STANDARD
+
+breaking:
+  use:
+    - FILE
